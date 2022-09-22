@@ -1,0 +1,536 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+Courses style
+*/
+.section{
+    margin-top: 3%;
+}
+
+.section h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: #333;
+} 
+ .section .sec h2{
+    content: '';
+    width: 60px;
+    height: 5px;
+    background: rgb(255, 196, 0);
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 5px;
+}
+
+.section .sec input{
+    width: 310px;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    display: block;
+    border: 1px solid #333;
+    margin: 0 auto 5%;
+}
+
+.section .sec h3{
+    font-size: 1.5em;
+    text-align: center;
+    width: 300px;
+    margin: 2% auto 5px;
+
+}
+.courses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.courses .course {
+    background-color: rgb(238, 229, 150);
+    width: 26%;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-bottom: 5%;
+}
+
+.course .head{
+    padding: 5% 0 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/htmlcss.jfif');
+}
+.course img{
+    width: 180px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+}
+.course .hours{
+    background-color: dodgerblue;
+    color: #fff;
+    width: 40%;
+    height: 40px;
+    margin-top: auto;
+    margin-left: auto;
+    padding: 10px 10px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.course .hours:hover{
+    opacity: 0.8;
+    color: #000;
+}
+.course .body{
+    padding: 10px 20px;
+}
+.course .body h2{
+    padding-bottom: 5px;
+    color: rgb(16, 167, 255);
+}
+.course .footer{
+    padding: 5px 20px;
+}
+.course .footer a{
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.course .footer a:hover{
+    text-decoration: underline;
+}
+
+.history {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    color: blueviolet;
+}
+.history i{
+    font-size: 100px;
+}
+.history i:hover{
+    opacity: 0.7;
+}
+.history h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+/* 
+About style
+*/
+.about-content{
+    background: rgba(0,0, 0, 0.5);
+}
+.pargs{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-content small {
+    font-size: 70px;
+    cursor: pointer;
+}
+.about-content .ar1 {
+    position: absolute;
+    right: 10%;
+    color: inherit;
+}
+.about-content .ar2 {
+    position: absolute;
+    left: 10%;
+}
+
+.about-content p{
+    width: 70%;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.about-content .insert{
+    transition: all 2s ease;
+    animation: change 4s ease forwards;
+}
+@keyframes change{
+    0%{
+        transform: translate(-2000px, 0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.about-content .going {
+    transition: all 2s ease;
+    animation: gone 4s ease forwards;
+}
+@keyframes gone{
+    0%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(2000px,0);
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(-5000px, 0);
+    }
+}
+
+
+.team h1{
+    font-size: 3em;
+    text-align: center;
+}
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.team .person{
+    background-color: brown;
+    color:#fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    max-width: 640px;
+}
+.team .person .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team .person .img img{
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+    border-top: 8px solid rgb(253, 157, 31);
+    border-top-right-radius: 50%;
+}
+.team .person .about{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+}
+
+.team .person .about .name{
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.team .person .about .skill{
+    color: cyan;
+}
+
+.team .detail{
+    font-size: .9em;
+    color: rgba(255, 255, 255, .9);
+}
+.team .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.team .footer button{
+    margin: 0 20px;
+    font-size: 50px;
+    background: transparent;
+    color: rgb(94, 250, 250);
+    border:none;
+    outline: none;
+}
+/* 
+Quizes Page
+*/
+.quizes{
+   margin-top: 2%;
+}
+.quizes .row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.row .col{
+   width: 45%;
+}
+.col-1{
+   background: url('../img/7.jpg') no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 400px;
+}
+.col-2 h1{
+   font-size: 2.4em;
+   margin: 0 0 15px;
+}
+
+.col-2 a{
+   text-decoration: none;
+   display: inline-block;
+   background-color: rgb(69, 69, 248);
+   color: #fff;
+   text-align: center;
+   width: 200px;
+   margin: 30px auto 0;
+   padding: 18px;
+   border-radius: 30px;
+   transition: all 0.4s ease;
+}
+.col-2 a:nth-child(2){
+    background-color: rgb(158, 252, 17);
+}
+
+@keyframes btn {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media(max-width:1050px){
+     .col-2 .btns {
+         width: 50%;
+         margin: auto;
+     }
+}
+.col-2 a:hover{
+    opacity: 0.8;
+}
+/* modules */
+.bg-model, 
+.quize-model,
+.cert-model{
+    background: rgba(0,0, 0, 0.8);
+    z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bg-model .model-content, 
+.quize-model .model-content,
+.cert-model .model-content{
+    background-color: #fff;
+    position: relative;
+    width: 50%;
+    min-width: 500px;
+    max-height: 82vh;
+    padding: 30px;
+    border-radius: 30px; 
+    box-shadow: 0  5px 3px #fff;
+    transition: all 4s ease;
+    animation: display 1s ease;
+}
+@keyframes display {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.bg-model .model-content h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bg-model .model-content .form-group {
+    width: 90%;
+    margin: 10px auto;
+}
+.bg-model .model-content input, 
+.model-content select{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #333;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.model-content small{
+    color: red;
+    padding-left: 10px;
+    display: none;
+}
+
+.bg-model .close,
+.cert-model .close{
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    font-size: 50px;
+    font-weight: lighter;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.cert-model .close{
+    color: #fff;
+}
+
+.quize-model .bgS{
+    width: 100%;
+    background-color: #333;
+    border-radius: 20px;
+}
+.quize-model .sec{
+    width: 0px;
+    background-color: rgb(255, 140, 9);
+    border-radius: 20px;
+    padding: 12px 0;
+    margin-top: 0;
+    color: rgb(255, 245, 245);
+}
+.quize-model h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.quize-model p {
+    text-align: center;
+}
+.quize-model ul{
+    width: 90%;
+    margin: 20px auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.quize-model input{
+    margin-right: 20px;
+}
+.model-content button{
+    display: block;
+    padding: 10px;
+    width: 100px;
+    margin: auto;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: #fff;
+    font-size: 1em;
+    font-family: inherit;
+    cursor: pointer;
+    
+}
+.quize-model p{
+    margin-top: 50px;
+}
+.quize-model li{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.quize-model label, .quize-model input{
+    cursor: pointer;
+}
+.model-content button:hover{
+    opacity: 0.9;
+}
+.arr{
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.ready{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ready h1{
+    color: red;
+    font-weight: bold;
+}
+
+/* cert model */
+.cert-model .model-content{
+    background-color: indianred;
+    height: 75vh;
+    cursor: pointer;
+    border: 5px dotted #fff;
+}
+
+.cert-model h1{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 2px;
+}
+.cert-model .intro{
+    font-style: italic;
+    padding: 5%;
+    color: yellow;
+}
+
+.cert-model .intro #name{
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+}
+.cert-model .result{
+    padding: 5px 3%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(238, 229, 150);
+}
+.cert-model .grade{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+    color: mediumspringgreen;
+    text-shadow: 0 2px 2px ;
+}
+
+.cert-model .copyright{
+    text-align: center;
+    font-size: 1.1em;
+    color: azure;
+}
+.cert-model .copyright p{
+    padding-top: 10px;
+}
+
+.cert-model .copyright .signature{
+    width: 100px;
+    margin: 0 auto;
+    font-family: Edwardian Script ITC;
+    font-size: 2em;
+    padding: 0;
+    border-bottom: 1px solid;
+}
+.cert-model .copyright .copy{
+    font-family: Edwardian Script ITC;
+    font-size: 2em;
+}

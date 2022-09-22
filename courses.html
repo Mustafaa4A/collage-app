@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header style="background: url('img/3.jpg') no-repeat;
+    background-size:cover; background-position:center">
+        <div class="nav-container container">
+            <div class="logo">
+                <h1>Code Faster</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navlink">
+                    <li class="navitem"><a href="index.html">Home</a></li>
+                    <li class="navitem"><a href="about.html">About</a></li>
+                    <li class="navitem"><a href="quizes.html">Quizes</a></li>
+                    <li class="navitem"><a href="courses.html" class="active">Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-wrap">
+                <input type="checkbox" class="toogle">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="quizes.html">Quizes</a></li>
+                                <li><a href="courses.html" class="active">Courses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <h2>Our Courses</h2>
+        </div>
+    </header>
+    <div class="container section">
+        <div class="sec">
+            <h1>Latest Courses</h1>
+            <h2></h2>
+
+            <h3>Choose a Block Course</h3>
+            <input type="text" list="Ourcourses" id="selected-courses"  placeholder="Search your course">
+            <datalist id="Ourcourses" >
+                <option value="All">
+                <option value="Web Development">
+                <option value="Python">
+                <option value="JavaScript">
+                <option value="Database">
+            </datalist>
+        </div>
+        <div class="courses">
+            <div class="course">
+                <div class="head" style="background-image: url('img/jst.png');">
+                    <img src="img/javascript.png" alt="">
+                    <p class="hours">4 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">JavaScript</h2>
+                    <p class="description">Learning JavaScript for beginers </p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+                <div class="head" style="background-image: url('img/pyt.png');">
+                    <img src="img/py.png" alt="">
+                    <p class="hours">3 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">Python</h2>
+                    <p class="description">Learning python from scratch </p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+                <div class="head" style="background-image: url('img/html.jpg');">
+                    <img src="img/htmlcss.jfif" alt="">
+                    <p class="hours">5 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">HTML and CSS</h2>
+                    <p class="description">Web development crash couse using HTML and css, with building large projects.</p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+               <div class="head" style="background-image: url('img/oop.png');">
+                    <img src="img/py.png" alt="">
+                    <p class="hours">3 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">OOP using Python</h2>
+                    <p class="description">Object-Oriented Programming with python </p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+                <div class="head" style="background-image: url('img/webd.jfif');">
+                    <img src="img/web.png" alt="">
+                    <p class="hours">9 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">Web Developing Course</h2>
+                    <p class="description">Web development using HTML, CSS and Jvanila JS</p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+                <div class="head" style="background-image: url('img/sql.jfif');">
+                    <img src="img/sql.jfif" alt="">
+                    <p class="hours">13 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">Advanced SQL Server</h2>
+                    <p class="description">Learning Database using Microsoft SQL server Database Management System.</p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+                <div class="head" style="background-image: url('img/dipy.webp');">
+                    <img src="img/dipy.webp" alt="">
+                    <p class="hours">7 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">Python Django</h2>
+                    <p class="description">Learning Django as a back end, with building real life projects.</p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+                <div class="head" style="background-image: url('img/orac2.png');">
+                    <img src="img/orac.png" alt="">
+                    <p class="hours">21 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">Oracle Database</h2>
+                    <p class="description">Learning Database using Microsoft SQL server Database Management System.</p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+            <div class="course">
+                <div class="head">
+                    <img src="img/i1.jpg" alt="">
+                    <p class="hours">21 hours</p>
+                </div>
+                <div class="body">
+                    <h2 class="title">JavaScript</h2>
+                    <p class="description">Web development using javasacript using vanila JS</p>
+                </div>
+                <div class="footer">
+                    <a href="course-deail.html">See more about the course</a>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="icon">
+                <p><i class='fas fa-user-graduate'></i></p>
+                <h2>Students</h2>
+                <h2><span id="students">120</span>+</h2>
+            </div>
+            <div class="icon">
+                <p><i class="fas fa-chalkboard-teacher"></i></p>
+                <h2>Course</h2>
+                <h2><span id="courses">120</span>+</h2>
+            </div>
+            <div class="icon">
+               <p> <i class="fas fa-laptop-code"></i></p>
+                <h2>Teacher</h2>
+                <h2><span id="teachers">120</span>+</h2>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="footer">
+            <div class="logo">
+                <h1>Code Faster</h1>
+                <p>Learn Coding in a  </p>
+            </div>
+            <div class="nav-footer">
+                <ul class="navlink">
+                    <li class="navitem"><a href="index.html">Home</a></li>
+                    <li class="navitem"><a href="about.html">About</a></li>
+                    <li class="navitem"><a href="quizes.html">Quizes</a></li>
+                    <li class="navitem"><a href="courses.html">Courses</a></li>
+                </ul>
+            </div>
+            <div class="input">
+                <form action="">
+                    <h2>Subscribe Now!</h2>
+                    <input type="email" placeholder="Enter your email" required><button class="arrow">&rightarrow;</button>
+                </form>
+            </div>
+            <div class="about">
+                <h2>About us</h2>
+                <p>We sat down with a teacher in Toronto who shared how coding can teach kids to embrace failure as a learning experience, provide tools to help solve real world problems and give them skills for life.</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <h3>Copyright &copy;Code Faster <span id="year">2021</span></h3>
+        </div>
+    </footer>
+    <script src="js/courses.js"></script>
+</body>
+</html>

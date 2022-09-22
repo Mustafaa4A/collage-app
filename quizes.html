@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header style="background: url('img/1.jpg') no-repeat;
+    background-size: cover; background-position:bottom">
+        <div class="nav-container container">
+            <div class="logo">
+                <h1>Code Faster</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="navlink">
+                    <li class="navitem"><a href="index.html">Home</a></li>
+                    <li class="navitem"><a href="about.html">About</a></li>
+                    <li class="navitem"><a href="quizes.html" class="active">Quizes</a></li>
+                    <li class="navitem"><a href="courses.html">Courses</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-wrap">
+                <input type="checkbox" class="toogle">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <div>
+                        <div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="quizes.html"  class="active">Quizes</a></li>
+                                <li><a href="courses.html">Courses</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="main quize">
+            <h2 style="text-align: center;">Are you ready to start our online quize?</h2>    
+        </div>
+    </header>
+    <div class="container quizes">
+        <div class="row">
+            <div class="col col-1">
+            </div>
+            <div class="col col-2">
+                <h1>Take a little time to test your level</h1>
+                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, quod necessitatibus. Impedit repellat voluptates velit eius iure voluptate, ipsam incidunt dolorum aut, laudantium eligendi magni sed, veritatis vero iusto laboriosam alias repellendus! Odit voluptatum repellat recusandae, esse, facilis ullam nostrum incidunt exercitationem architecto modi excepturi nam magni molestias sapiente ipsum?</P>
+                <div class="btns">
+                    <a href="" id="start">Start Quize</a>
+                    <a href="challanges.html" id="chalange">Challanges</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- models -->
+    <!-- form model -->
+    <div class="bg-model" style="display: none;" id="model1">
+        <div class="model-content" id="so">
+            <p id="close" class="close">+</p>
+            <form>
+                <h1>Fill The Form To Start Quize</h1>
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <small>Full name must contain atleast 10 charectors</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="address" placeholder="Address" required>
+                    <small>Full name must contain atleast 10 charectors</small>
+                </div>
+                <div class="form-group">
+                    <select name="" id="gender">
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Feale">Female</option>
+                    </select>
+                    <small>Full name must contain atleast 10 charectors</small>
+                </div>
+                <div class="form-group">
+                    <input type="Email" id="email" placeholder="Email" required>
+                    <small>Full name must contain atleast 10 charectors</small>
+                </div>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!-- quize model -->
+    <div class="quize-model" style="display: none;" id="model2">
+        <div class="model-content">
+            <div class="bgS"><p class="sec"></p></div>
+            <h2>Question <span id="que-number">1</span></h2>
+            <p id="question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum id aliquid officia fugiat consequatur nemo inventore illo voluptas minus assumenda.</p>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer one</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer two</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer three</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer four</label>
+                </li>
+            </ul>
+            <button id="submitBtn">Next <span class="arr">&rightarrow;</span></button>
+        </div>
+    </div>
+    <div class="cert-model" style="display: none;" id="model3">
+        <div class="model-content" id="certification">
+            <p class="close" id="close2">+</p>
+            <h1>Certificate of completion</h1>
+            <div class="intro">
+                <p>This is to certify that <span id="name">Mr. Mustafa Abubakar</span> successfly completed The Quize</p>
+            </div>
+            <div class="result">
+                <p>Total Question: <span id="total-que">10</span></p>
+                <p>Max Average: <span id="max-avg">100</span>%</p>
+            </div>
+            <div class="result">
+                <p>Corrected: <span id="correct">7</span></p>
+                <p>Incorrected: <span id="incorrect">3</span></p>
+            </div>
+            <div class="grade">
+                <p>Your Average is</p>
+                <p id="average">70%</p>
+            </div>
+            <div class="copyright">
+                <p>Mustafa Abubakar, Instructor</p>
+                <p class="signature">Ascad</p>
+                <p>&</p>
+                <p class="copy">Code faster</p>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <div class="footer">
+            <div class="logo">
+                <h1>Code Faster</h1>
+                <p>Learn Coding in a  </p>
+            </div>
+            <div class="nav-footer">
+                <ul class="navlink">
+                    <li class="navitem"><a href="index.html">Home</a></li>
+                    <li class="navitem"><a href="about.html">About</a></li>
+                    <li class="navitem"><a href="quizes.html">Quizes</a></li>
+                    <li class="navitem"><a href="courses.html">Courses</a></li>
+                </ul>
+            </div>
+            <div class="input">
+                <form action="">
+                    <h2>Subscribe Now!</h2>
+                    <input type="email" placeholder="Enter your email" required><button class="arrow">&rightarrow;</button>
+                </form>
+            </div>
+            <div class="about">
+                <h2>About us</h2>
+                <p>We sat down with a teacher in Toronto who shared how coding can teach kids to embrace failure as a learning experience, provide tools to help solve real world problems and give them skills for life.</p>
+            </div>
+        </div>
+        <div class="contact">
+            <div class="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <h3>Copyright &copy;Code Faster <span id="year">2021</span></h3>
+        </div>
+    </footer>
+
+    <!-- script -->
+    <script src="js/quize.js"></script>
+</body>
+</html>

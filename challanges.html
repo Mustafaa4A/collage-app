@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challanges</title>
+    <link rel="stylesheet" href="css/challanges.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/challanges.js" defer></script>
+</head>
+<body>
+    <a href="index.html"><button class="go-btn">&leftarrow;</button></a>
+    <div class="container title">
+        <h1>Challanges</h1>
+    </div>
+    <div class="container challang-box">
+        <div class="change-age">
+            <h1>Changing Your Age</h1>
+            <p class="error">WWw</p>
+            <input autofocus type="number" name="" id="birthY" placeholder="Enter your birth year......" min='1' >
+            <div class="btns">
+                <input type="button" value="Years" onclick="intoYear()">
+                <input type="button" value="Months" onclick="intoMonths()">
+                <input type="button" value="Days" onclick="intoDays()">
+            </div>
+            <div class="result" style="display: none;">
+                <h2>Your Age in <span id="type"></span> is: <span id="age"></span></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

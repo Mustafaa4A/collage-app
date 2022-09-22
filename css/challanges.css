@@ -1,0 +1,121 @@
+*{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background: rgb(5, 134, 255);
+    
+}
+
+.go-btn{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(110, 23, 23);
+    padding: 5px 10px 10px 10px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.go-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.title{
+    background-color: hotpink;
+    text-align: center; 
+}
+
+.challang-box{
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.challang-box .change-age{
+    color: #fff;
+    background-color: indianred;
+    padding: 40px;
+    width: 90%;
+    max-width: 800px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type='number']{
+    display: block;
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #333;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px;
+    margin: 20px;
+}
+input[type='button']{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: inherit;
+}
+
+input[type='button']:nth-child(odd){
+    background-color: rgb(22, 230, 22);
+}
+
+input[type='button']:nth-child(even){
+    background-color: rgb(64, 53, 231);
+}
+input[type='button']:nth-child(odd):hover{
+    background-color: #5bff5b;
+}
+
+input[type='button']:nth-child(even):hover{
+    background-color: rgb(86, 76, 231);
+}
+
+
+.result{
+    margin-top: 20px;
+    background-color: rgb(241, 104, 40);
+    padding: 20px;
+}
+.result h2{
+    color: indigo;
+}
+
+.result .age{
+    padding: 8px;
+    background-color: lemonchiffon;
+    border-radius: 5px;
+}
+
+.error{
+    width: 80%;
+    background-color: rgb(255, 0, 0);
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    display: none;
+}
